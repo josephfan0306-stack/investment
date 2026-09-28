@@ -16,7 +16,7 @@ const advantages: Advantage[] = [
   {
     icon: IconBolt,
     title: "降低功耗",
-    desc: "縮短光引擎與交換器 ASIC 之間的電氣訊號路徑，減少驅動與均衡電路所需能量，降低每位元傳輸的耗電量。",
+    desc: "縮短光引擎與交換器 ASIC 之間的電氣訊號路徑，減少驅動與均衡電路所需能量，降低每位元傳輸的耗電量,大幅降低傳輸耗損。",
   },
   {
     icon: IconGauge,
@@ -30,15 +30,15 @@ const advantages: Advantage[] = [
   },
   {
     icon: IconChip,
-    title: "簡化系統設計",
+    title: "簡化系統設計-666",
     desc: "減少可插拔模組數量與連接器介面，降低機箱散熱與電源設計的複雜度，簡化整體系統架構。",
   },
 ];
 
 const applications = [
   {
-    title: "AI 訓練與推論叢集",
-    desc: "大規模 GPU 叢集需要極高頻寬與低延遲的節點互連，CPO 有助於提升整體運算效能與能源使用效率。",
+    title: "AI 訓練與推論叢集_888",
+    desc: "大規模 GPU 叢集需要極高頻寬與低延遲的節點互連，CPO 有助於提升整體運算效能與能源使用效率。測試",
     image: "/images/ai-cluster-nodes.svg",
   },
   {
@@ -87,7 +87,7 @@ export default function Home() {
           )}
         </span>
         <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-          共同封裝光學
+          共同封裝光學CPO
           <br />
           <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent">
             Co-Packaged Optics
