@@ -30,7 +30,7 @@ const advantages: Advantage[] = [
   },
   {
     icon: IconChip,
-    title: "簡化系統設計",
+    title: "簡化系統設計-大立光",
     desc: "減少可插拔模組數量與連接器介面，降低機箱散熱與電源設計的複雜度，簡化整體系統架構。",
   },
 ];
@@ -87,7 +87,7 @@ export default function Home() {
           )}
         </span>
         <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-          共同封裝光學
+          共同封裝光學CPO
           <br />
           <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent">
             Co-Packaged Optics
