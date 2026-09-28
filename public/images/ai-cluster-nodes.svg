@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="AI 運算叢集節點連結示意圖">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="g4" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg4)"/>
+
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.35">
+    <path d="M180 160 L450 300 M450 300 L720 160 M180 440 L450 300 M450 300 L720 440"/>
+    <path d="M180 160 L180 440 M720 160 L720 440 M180 160 L720 440 M720 160 L180 440"/>
+  </g>
+
+  <g>
+    <!-- 節點 -->
+    <rect x="150" y="130" width="60" height="60" rx="10" fill="#0b1220" stroke="#475569"/>
+    <rect x="420" y="130" width="60" height="60" rx="10" fill="#0b1220" stroke="#475569"/>
+    <rect x="690" y="130" width="60" height="60" rx="10" fill="#0b1220" stroke="#475569"/>
+    <rect x="150" y="410" width="60" height="60" rx="10" fill="#0b1220" stroke="#475569"/>
+    <rect x="690" y="410" width="60" height="60" rx="10" fill="#0b1220" stroke="#475569"/>
+
+    <!-- 中心高亮節點 -->
+    <rect x="418" y="270" width="64" height="64" rx="12" fill="#0b1220" stroke="#a78bfa" stroke-width="2" filter="url(#g4)"/>
+    <text x="450" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c4b5fd">GPU</text>
+  </g>
+
+  <g fill="#67e8f9" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" opacity="0.8">
+    <text x="180" y="165">Node</text>
+    <text x="450" y="165">Node</text>
+    <text x="720" y="165">Node</text>
+    <text x="180" y="445">Node</text>
+    <text x="720" y="445">Node</text>
+  </g>
+
+  <text x="450" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">高頻寬、低延遲的叢集節點互連</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="共同封裝光學架構示意圖">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="trace2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <filter id="g3" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg3)"/>
+
+  <!-- 共同基板 -->
+  <rect x="260" y="220" width="380" height="160" rx="16" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="450" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748b">共同封裝基板</text>
+
+  <!-- ASIC -->
+  <rect x="290" y="255" width="150" height="90" rx="10" fill="#0b1220" stroke="#475569" stroke-width="1.5"/>
+  <text x="365" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">ASIC</text>
+
+  <!-- 短距離連結 -->
+  <path d="M440 300 H480" stroke="url(#trace2)" stroke-width="6" filter="url(#g3)"/>
+
+  <!-- 光引擎 -->
+  <rect x="480" y="255" width="120" height="90" rx="10" fill="#0b1220" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="540" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#67e8f9">Optical</text>
+  <text x="540" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#67e8f9">Engine</text>
+
+  <!-- 出光光束 -->
+  <g filter="url(#g3)">
+    <path d="M600 275 C 700 250, 760 220, 830 190" stroke="#22d3ee" stroke-width="3" fill="none"/>
+    <path d="M600 300 H 830" stroke="#67e8f9" stroke-width="3" fill="none"/>
+    <path d="M600 325 C 700 350, 760 380, 830 410" stroke="#22d3ee" stroke-width="3" fill="none"/>
+  </g>
+  <circle cx="830" cy="190" r="4" fill="#a5f3fc"/>
+  <circle cx="830" cy="300" r="4" fill="#a5f3fc"/>
+  <circle cx="830" cy="410" r="4" fill="#a5f3fc"/>
+
+  <text x="450" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">電氣路徑縮短至毫米等級 · 低功耗、高頻寬密度</text>
+</svg>

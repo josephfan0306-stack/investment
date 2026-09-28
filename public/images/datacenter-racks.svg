@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="資料中心機櫃示意圖">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g6" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg6)"/>
+  <rect x="0" y="420" width="900" height="180" fill="url(#floor)"/>
+
+  <g>
+    <!-- 五個機櫃 -->
+    <g id="rackset">
+      <rect x="0" y="0" width="90" height="300" rx="6" fill="#111827" stroke="#334155"/>
+      <g stroke="#334155">
+        <path d="M6 30 H84 M6 60 H84 M6 90 H84 M6 120 H84 M6 150 H84 M6 180 H84 M6 210 H84 M6 240 H84 M6 270 H84"/>
+      </g>
+      <circle cx="78" cy="20" r="2.5" fill="#22d3ee"/>
+    </g>
+    <use href="#rackset" x="150" y="180"/>
+    <use href="#rackset" x="300" y="140"/>
+    <use href="#rackset" x="450" y="140"/>
+    <use href="#rackset" x="600" y="180"/>
+    <use href="#rackset" x="750" y="220"/>
+  </g>
+
+  <g stroke="#67e8f9" stroke-width="2" opacity="0.75" filter="url(#g6)">
+    <path d="M45 180 H1050" transform="translate(-45,0)"/>
+    <path d="M45 190 C 200 150, 350 150, 495 190" />
+    <path d="M495 190 C 640 150, 790 150, 840 200" />
+  </g>
+
+  <text x="450" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">次世代資料中心高速光纖互連</text>
+</svg>

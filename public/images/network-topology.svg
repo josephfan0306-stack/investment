@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="高速乙太網路交換器拓撲示意圖">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="g5" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg5)"/>
+
+  <!-- 中央交換器 -->
+  <rect x="400" y="260" width="100" height="80" rx="12" fill="#0b1220" stroke="#22d3ee" stroke-width="2" filter="url(#g5)"/>
+  <text x="450" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#67e8f9">Switch</text>
+
+  <g stroke="#22d3ee" stroke-width="1.6" opacity="0.7">
+    <path d="M450 260 L200 130"/>
+    <path d="M450 260 L450 100"/>
+    <path d="M450 260 L700 130"/>
+    <path d="M450 340 L200 470"/>
+    <path d="M450 340 L450 500"/>
+    <path d="M450 340 L700 470"/>
+  </g>
+
+  <g fill="#0b1220" stroke="#475569">
+    <circle cx="200" cy="130" r="26"/>
+    <circle cx="450" cy="100" r="26"/>
+    <circle cx="700" cy="130" r="26"/>
+    <circle cx="200" cy="470" r="26"/>
+    <circle cx="450" cy="500" r="26"/>
+    <circle cx="700" cy="470" r="26"/>
+  </g>
+  <g fill="#93c5fd" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">
+    <text x="200" y="134">Leaf</text>
+    <text x="450" y="104">Leaf</text>
+    <text x="700" y="134">Leaf</text>
+    <text x="200" y="474">Leaf</text>
+    <text x="450" y="504">Leaf</text>
+    <text x="700" y="474">Leaf</text>
+  </g>
+
+  <text x="450" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">更高埠數與單埠速率的交換器架構</text>
+</svg>

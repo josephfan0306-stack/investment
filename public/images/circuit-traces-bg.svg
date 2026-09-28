@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="電路板走線抽象背景">
+  <defs>
+    <linearGradient id="bg10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="g10" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg10)"/>
+
+  <g stroke="#22d3ee" stroke-width="1.4" fill="none" opacity="0.55" filter="url(#g10)">
+    <path d="M40 60 H260 V150 H480 V80 H700"/>
+    <path d="M60 400 H220 V300 H400 V360 H620 V260"/>
+    <path d="M900 60 H1080 V180 H960 V320 H1140"/>
+    <path d="M760 420 H900 V340 H1080"/>
+    <path d="M340 220 V280 H540"/>
+  </g>
+  <g stroke="#a78bfa" stroke-width="1.2" fill="none" opacity="0.4" filter="url(#g10)">
+    <path d="M120 460 V380 H320 V440"/>
+    <path d="M780 120 H620 V40"/>
+    <path d="M1000 420 V460 H840"/>
+  </g>
+
+  <g fill="#67e8f9">
+    <circle cx="260" cy="60" r="3"/>
+    <circle cx="480" cy="150" r="3"/>
+    <circle cx="700" cy="80" r="3"/>
+    <circle cx="220" cy="400" r="3"/>
+    <circle cx="400" cy="300" r="3"/>
+    <circle cx="620" cy="360" r="3"/>
+    <circle cx="1080" cy="60" r="3"/>
+    <circle cx="960" cy="180" r="3"/>
+    <circle cx="1140" cy="320" r="3"/>
+  </g>
+  <g fill="#c4b5fd">
+    <circle cx="320" cy="380" r="3"/>
+    <circle cx="620" cy="120" r="3"/>
+    <circle cx="840" cy="420" r="3"/>
+  </g>
+</svg>

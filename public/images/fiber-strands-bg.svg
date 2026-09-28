@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="光纖光束抽象背景">
+  <defs>
+    <radialGradient id="bg9" cx="30%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g9" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg9)"/>
+
+  <g filter="url(#g9)" fill="none">
+    <path d="M-50 100 C 300 250, 600 50, 1250 300" stroke="url(#s1)" stroke-width="2.5"/>
+    <path d="M-50 220 C 350 120, 650 380, 1250 180" stroke="url(#s2)" stroke-width="2"/>
+    <path d="M-50 360 C 300 500, 700 260, 1250 480" stroke="url(#s1)" stroke-width="2"/>
+    <path d="M-50 500 C 350 400, 650 640, 1250 420" stroke="url(#s2)" stroke-width="2.5"/>
+    <path d="M-50 640 C 300 720, 700 560, 1250 700" stroke="url(#s1)" stroke-width="1.8"/>
+    <path d="M-50 40 C 260 -40, 640 140, 1250 -20" stroke="url(#s2)" stroke-width="1.6"/>
+  </g>
+
+  <g opacity="0.6" fill="#a5f3fc">
+    <circle cx="220" cy="180" r="1.4"/>
+    <circle cx="480" cy="320" r="1.4"/>
+    <circle cx="760" cy="140" r="1.4"/>
+    <circle cx="980" cy="420" r="1.4"/>
+    <circle cx="340" cy="560" r="1.4"/>
+    <circle cx="900" cy="620" r="1.4"/>
+  </g>
+</svg>
